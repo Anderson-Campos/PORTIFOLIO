@@ -58,7 +58,7 @@
     z-index: -1;
  }
 
- @media only screen and (max-width: 768px) {
+ @media(max-width: 768px) {
     .header {
         flex-direction: column-reverse;
         text-align: center;
@@ -73,11 +73,13 @@
         top: -15px;
         margin-bottom: 1rem;
      }
+     .header .header__left .btn{
+        position: relative;
+     }
  }
 
- @media only screen and(max-width: 322px) {
-    .header .header__right .header__image .anderson {
-        position: relative;
-        left: 7rem;
+ @media(max-width: 321px) {
+    .header .header__right .header__image .anderson{
+        max-width: 33rem;
     }
 }
